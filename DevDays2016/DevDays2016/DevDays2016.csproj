@@ -169,7 +169,9 @@
     <Content Include="Scripts\action.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\TestDevMsp - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\TestDevMsp - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\TestDevMsp - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\TestDevMsp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\html5.js" />
