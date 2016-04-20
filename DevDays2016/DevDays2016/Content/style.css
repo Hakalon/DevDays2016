@@ -8,13 +8,13 @@ html * {
 }
 
 body {
-	background: #0088D3 url(../images/KV_bg.png) center 70px no-repeat;
+	background: #F3C80F ;
 	margin: 0; 
 	padding: 0;
 }
 
 section {
-	overflow: auto;
+	overflow: no-content;
 }
 
 h2 {
@@ -169,7 +169,7 @@ header hgroup {
 /* 共用 主選單*/
 
 nav.top {
-	background: url(../images/nav_bg.png) center top no-repeat;
+	background: center top no-repeat;
 	font-weight: 500;
 	font-size:18px; 
 	overflow: auto;
