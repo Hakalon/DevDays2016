@@ -151,6 +151,8 @@
     <Content Include="Scripts\action.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\TestDevMsp - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\TestDevMsp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\html5.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -184,6 +186,8 @@
     <Content Include="Views\Home\QA.cshtml" />
     <Content Include="Views\Home\Answer.cshtml" />
     <Content Include="Views\Register\Picture.cshtml" />
+    <Content Include="Views\Home\Thanks.cshtml" />
+    <Content Include="Views\Register\Signin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

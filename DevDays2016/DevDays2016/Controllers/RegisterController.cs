@@ -16,8 +16,16 @@ namespace DevDays2016.Controllers
 
         public ActionResult Send()
         {
+            return View("Signin");
+        }
+        public ActionResult SendSignin()
+        {
             return View("Picture");
         }
 
+        public ActionResult Signin()
+        {
+            return View("Signin");
+        }
     }
 }
