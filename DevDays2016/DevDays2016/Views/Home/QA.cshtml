@@ -28,7 +28,36 @@
     </nav>
     <div class="content wrapper">
 
-        <h4 class="underline">@ViewBag.Title</h4>
+        <h4 class="underline">問題滿天飛！</h4>
+        @*提問*@
+        <div class="row" style="padding-bottom:15px;">
+            @using (Html.BeginForm("Insert", "Home"))
+            {
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="ID_Name">姓名</label>
+                            <input type="text" class="form-control" name="name" placeholder="王小明" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="Writing">內容：</label>
+                            <textarea class="form-control" rows="3" style="width:100%; max-width: none;" name="content" placeholder="Content"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-xs-12">
+                            <button type="submit" class="btn btn-info" style="width:100%;">送出</button>
+                        </div>
+                    </div>
+            }
+        </div>
+
+
 
     </div>
     <footer>
