@@ -1,8 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Register";
+    ViewBag.Title = "Empty";
 }
 
-<a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">立即報名</a>
+<a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">現場報名</a>
 <div class="container">
     <header>
         <hgroup>
@@ -14,10 +14,10 @@
     @* 導覽列 *@
     <nav class="top">
         <ul>
-            <li><a href="">活動介紹</a></li>
-            <li><a href="">講義下載</a></li>
-            <li><a href="">意見交流</a></li>
-            <li><a href="">活動問卷</a></li>
+            <li><a href="~/Home/Agenda">活動介紹</a></li>
+            <li><a href="~/Home/Index">講師介紹</a></li>
+            <li><a href="~/Home/QA">意見交流</a></li>
+            <li><a href="~/Home/Answer">活動問卷</a></li>
             <li>
                 <a class="reg" href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank">
                     立即報名
@@ -27,46 +27,22 @@
         </ul>
     </nav>
 
-    @* 內容 *@
+    @*於此處放置你的內容*@
     <div class="content wrapper">
 
-        <h2 class="underline">註冊</h2>
-        <section>
-            @using (Html.BeginForm("Send", "Register", FormMethod.Post))
-            {
-                <div class="col-md-12" >
-                    <h4>姓名</h4>
-                    <input type="text" placeholder="王小明" />
-                </div>
-                <div class="col-md-12">
-                    <h4>行動電話</h4>
-                    <input type="tel" placeholder="0911-000-000" />
-                </div>
-                <div class="col-md-12">
-                    <h4>Email</h4>
-                    <input type="email" placeholder="DevDays@outlook.com" />
-                </div>
-                <div class="col-md-12">
-                    <h4>暱稱</h4>
-                    <input type="text" placeholder="小小明" />
-                </div>
-                <div class="col-md-12" style="grid-column-align:center;">
-                    <h4>職業</h4>
-                    <select>
-                        <option value="工程師">工程師</option>
-                        <option value="商務人士">商務人士</option>
-                        <option value="設計師">設計師</option>
-                        <option value="其他">其他</option>
-                    </select>
-                </div>
+        <div class="col-md-12">
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="snap">Take a picture！</button>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
 
-                //缺專長、照片
-                <div class="col-md-12" style="align-content:center" >
-                    <input style="margin-top: 20px" type="submit" name="送出" />
-                </div>     
+        @using (Html.BeginForm("Index", "Home"))
+            {
+                <input type = "submit" value = "完成註冊！" />
             }
-        </section>
+
     </div>
+
     <footer>
         <small>
             ©2016  Microsoft Corporation.  著作權所有，並保留一切權利。
@@ -90,7 +66,9 @@
     var Ctrl = "";
     document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
 </script>
+<script type="text/javascript" src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms.js">
 
+</script>
 <script type="text/javascript">
     // Put event listeners into place
     window.addEventListener("DOMContentLoaded", function () {
@@ -121,10 +99,13 @@
                 video.play();
             }, errBack);
         }
-    }, false);
-</script>
 
-<script type="text/javascript" src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms.js">
+        document.getElementById("snap").addEventListener("click", function () {
+            context.drawImage(video, 0, 0, 640, 480);
+        });
+
+    }, false);
+
 
 </script>
 <iframe id="_msnFrame" src="./DevDays Asia 2016 亞太開發人員技術年會_files/c.html" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;"></iframe>

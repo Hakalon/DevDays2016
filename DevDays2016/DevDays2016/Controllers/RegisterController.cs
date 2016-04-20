@@ -13,5 +13,11 @@ namespace DevDays2016.Controllers
         {
             return View();
         }
+
+        public ActionResult Send()
+        {
+            return View("Picture");
+        }
+
     }
 }

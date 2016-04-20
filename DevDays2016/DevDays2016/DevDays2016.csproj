@@ -179,6 +179,7 @@
     <Content Include="Views\empty.cshtml" />
     <Content Include="Views\Home\QA.cshtml" />
     <Content Include="Views\Home\Answer.cshtml" />
+    <Content Include="Views\Register\Picture.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
