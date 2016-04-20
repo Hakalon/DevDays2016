@@ -129,6 +129,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\content_bg.png" />
+    <Content Include="images\KV.png" />
+    <Content Include="images\KV_bg.png" />
+    <Content Include="images\line.png" />
+    <Content Include="images\ms_logo_w.png" />
+    <Content Include="images\nav_bg.png" />
+    <Content Include="images\register.gif" />
+    <Content Include="images\sponsor.png" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
@@ -167,6 +175,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Agenda.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
