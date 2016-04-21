@@ -14,15 +14,15 @@
     @* 導覽列 *@
     <nav class="top">
         <ul>
-                <li><a href="~/Home/Agenda">活動首頁</a></li>
-                <li><a href="~/Home/Index">講師介紹</a></li>
-                <li><a href="~/Home/QA">意見交流</a></li>
-                <li><a href="~/Home/Answer">活動問卷</a></li>
-                <li>
-                    <a class="reg" href="~/Register/Signin" target="_blank">
-                        報到/現場報名
-                    </a>
-                </li>
+            <li>
+                <a class="reg" href="~/Register/Signin" target="_blank">
+                    報到/現場報名
+                </a>
+            </li>
+            <li><a href="~/Home/Agenda">活動首頁</a></li>
+            <li><a href="~/Home/Index">講師介紹</a></li>
+            <li><a href="~/Home/QA">意見交流</a></li>
+            <li><a href="~/Home/Answer">活動問卷</a></li>
             <li class="eng"><a href="https://www.microsoft.com/taiwan/events/devdays/eng/default.htm">ENGLISH</a></li>
         </ul>
     </nav>
@@ -33,6 +33,7 @@
         <div class="col-md-12">
             <video id="video" width="640" height="480" autoplay></video>
             <button id="snap">Take a picture！</button>
+
             <canvas id="canvas" width="640" height="480"></canvas>
         </div>
 
@@ -53,7 +54,7 @@
             <li><a href="https://go.microsoft.com/fwlink/?LinkId=248681" target="_blank">隱私權聲明</a></li>
         </ul>
         <a href="https://www.microsoft.com/taiwan/" target="_blank">
-            <img src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms_logo_w.png">
+            <img src="~/images/ms_logo_w.png">
         </a>
     </footer>
 </div>
@@ -69,6 +70,11 @@
 <script type="text/javascript" src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms.js">
 
 </script>
+
+
+
+
+
 <script type="text/javascript">
     // Put event listeners into place
     window.addEventListener("DOMContentLoaded", function () {
@@ -77,6 +83,7 @@
             context = canvas.getContext("2d"),
             video = document.getElementById("video"),
             videoObj = { "video": true },
+
             errBack = function (error) {
                 console.log("Video capture error: ", error.code);
             };
