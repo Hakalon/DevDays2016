@@ -15,5 +15,7 @@ namespace DevDays2016.Models
 
         public string Content { get; set; }
 
+        public string Name { get; set; }
+
     }
 }

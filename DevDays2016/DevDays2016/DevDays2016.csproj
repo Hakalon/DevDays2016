@@ -167,6 +167,7 @@
     <Content Include="images\ms_logo_w.png" />
     <Content Include="images\nav_bg.png" />
     <Content Include="images\register.gif" />
+    <Content Include="images\sign.png" />
     <Content Include="images\speaker.png" />
     <Content Include="images\sponsor.png" />
     <Content Include="Content\normalize.css" />
