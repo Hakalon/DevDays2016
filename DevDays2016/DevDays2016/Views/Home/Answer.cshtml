@@ -2,7 +2,7 @@
     ViewBag.Title = "Answer";
 }
 
-<a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">立即報名</a>
+<a href="~/Register/SendSignin" target="_blank" class="register">立即報名</a>
  
 
   
@@ -25,8 +25,8 @@
                     報到/現場報名
                 </a>
             </li>
-            <li><a href="~/Home/Agenda">活動首頁</a></li>
-            <li><a href="~/Home/Index">講師介紹</a></li>
+            <li><a href="~/Home/Agenda">活動/講師介紹</a></li>
+            <li><a href="~/Home/Index">認識夥伴</a></li>
             <li><a href="~/Home/QA">意見交流</a></li>
             <li><a href="~/Home/Answer">活動問卷</a></li>
             
@@ -98,24 +98,36 @@
 
                 //缺專長、照片
                 <div class="col-md-12" style="align-content:center">
-                    <nav class="top">
+                    @*<nav class="top">*@
                         <ul>
                             <li><input style="margin-top: 20px" type="submit" name="送出" /></li>
-                            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNDYwZWU5MDEtMjhhNy00ZjU0LWE5MGUtZTA4ZjYxZWUyMjA1IiwidCI6Ijc4MGI1NTkwLTRlY2MtNDUxYS1hZThjLTRhN2QxNzJkYTkzNSIsImMiOjEwfQ%3D%3D" target="_blank"><img border="0" height="50" width="50" style="position:absolute;top:40px;left:950px" src="~/images/BI.jpg" /></li>
+                            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNDYwZWU5MDEtMjhhNy00ZjU0LWE5MGUtZTA4ZjYxZWUyMjA1IiwidCI6Ijc4MGI1NTkwLTRlY2MtNDUxYS1hZThjLTRhN2QxNzJkYTkzNSIsImMiOjEwfQ%3D%3D" target="_blank"><img border="0" height="70" width="70" style="position:absolute;top:15px;left:920px" src="~/images/BI.jpg" /></li>
                         </ul>
-                     </nav>
+                     @*</nav>*@
                 </div>
             }
         </section>
     </div>
     <footer>
         <small>
-            ©2016  Microsoft Corporation.  著作權所有，並保留一切權利。
+            ©2016 Microsoft Corporation. 著作權所有，並保留一切權利。
         </small>
         <ul>
-            <li><a href="https://www.microsoft.com/taiwan/misc/cpyright.htm" target="_blank">使用規定</a></li>
-            <li><a href="https://www.microsoft.com/library/toolbar/3.0/trademarks/zh-tw.mspx" target="_blank">商標</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=248681" target="_blank">隱私權聲明</a></li>
+            <li>
+                <a href="https://www.microsoft.com/taiwan/misc/cpyright.htm" target="_blank">
+                    使用規定
+                </a>
+            </li>
+            <li>
+                <a href="https://www.microsoft.com/library/toolbar/3.0/trademarks/zh-tw.mspx" target="_blank">
+                    商標
+                </a>
+            </li>
+            <li>
+                <a href="https://go.microsoft.com/fwlink/?LinkId=248681" target="_blank">
+                    隱私權聲明
+                </a>
+            </li>
         </ul>
         <a href="https://www.microsoft.com/taiwan/" target="_blank">
             <img src="~/images/ms_logo_w.png">

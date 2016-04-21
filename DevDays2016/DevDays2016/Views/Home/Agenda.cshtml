@@ -3,7 +3,7 @@
 }
 
 <body>
-    <a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">
+    <a href="~/Register/SendSignin" target="_blank" class="register">
         立即報名
     </a>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -25,15 +25,19 @@
                         報到/現場報名
                     </a>
                 </li>
-                <li><a href="~/Home/Agenda">活動首頁</a></li>
-                <li><a href="~/Home/Index">講師介紹</a></li>
+                <li><a href="~/Home/Agenda">活動/講師介紹</a></li>
+                <li><a href="~/Home/Index">認識夥伴</a></li>
                 <li><a href="~/Home/QA">意見交流</a></li>
                 <li><a href="~/Home/Answer">活動問卷</a></li>
 
                 <li class="eng"><a href="https://www.microsoft.com/taiwan/events/devdays/eng/default.htm">ENGLISH</a></li>
             </ul>
         </nav>
+        
+
         <div id="about" class="content">
+        <br>
+             <a href="#state1" class="underline h2">活動資訊</a> / <a href="#state2" class="underline h2">活動議程</a> / <a href="#state3" class="underline h2" >講師介紹</a>
             <section class="intro">
                 <p>
                     2015 年 11
@@ -56,7 +60,7 @@
                 </p>
             </section><!-- .intro -->
             <section class="info">
-                <h2>活動資訊</h2>
+                <h2 id="state1">活動資訊</h2>
                 <div>
                     <div class="right">
                         <article class="venue">
@@ -93,13 +97,14 @@
                 <div class="bottom">
                     <p>※ 主辦單位保留報名資格審查之權利</p>
                     <a href="#top" class="gotop white">TOP↑</a>
+                    
                 </div>
             </section><!-- .info -->
 
     
                 @*<div class="container">*@
                     <div id="agenda" class="content wrapper">
-                        <h2 class="underline">活動議程</h2>
+                        <h2 class="underline" id="state2">活動議程 </h2>
                         <nav class="sub_menu">
                             <ul>
                                 <li class="day01"><a href="https://www.microsoft.com/taiwan/events/devdays/agenda.htm#day01">Day01</a></li>
@@ -645,6 +650,232 @@
                 @*</div>*@
 
 </div><!-- #about .content -->
+
+
+        <div id="speaker" class="content wrapper">
+            <h2 class="underline" id="state3" >講師介紹</h2>
+            <section>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h3>Keynote Speaker</h3>
+                            <h4>Tristan Davis</h4>
+                            <h5>Group Program Manager, Microsoft Corporation </h5>
+                        </hgroup>
+                        <p>
+                            Tristan Davis is the Group Program Manager of the APIs &amp; Extensions team within Office Extensibility. His team is responsible for improvements to the Office 365 APIs, the new Apps for Office client extensibility model, as well as all existing flavors of Office programmability. Prior to joining the team, he was a member of the Word program management team from Office 2003 through Office 2013.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <!-- 160414 update ↓-->
+                    <img src="~/images/speaker.png">
+                    <div class="right">
+                        <hgroup>
+                            <h3>Keynote Speaker</h3>
+                            <h4>David Robinson</h4>
+                            <h5>Director of Engineering for Cortina Intelligence China within Cloud and Enterprise Computing</h5>
+                        </hgroup>
+                        <p>
+                            David Robinson is the Director of Engineering for Cortina Intelligence China within Cloud and Enterprise Computing. He is responsible for the global Azure Data Movement services, SSIS, and OData protocols. David Robinson relocated from the United States to Shanghai, China and has spoken at previous Microsoft Interoperability Events.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h3>Keynote Speaker</h3>
+                            <h4>Darwin Schweitzer</h4>
+                            <h5>Senior Program Manager</h5>
+                        </hgroup>
+                        <p>
+                            Darwin is a Senior Program Manager at Microsoft focused on Cortana Analytics, Big Data, and Data Science tools and education.  He is part of the Algorithms and Data Science group in Information Management and Machine Learning.  His data experience has been gained through a number of diverse roles at Microsoft as well as at other technology companies like IBM and Business Objects.  Roles have included program manager, instructor, practitioner, data architect, technical lead, consultant, and teaching assistant and he has worked for companies in a variety of industries (technology, healthcare, financial services, insurance, pharmaceuticals, travel, education, non-profit, and utilities) including local Pacific Northwest organizations like the University of Washington, Washington Mutual, Expedia, and Snohomish County PUD.  The one commonality in his career has been Data and Education.  Darwin is an aspiring Data Engineer/Data Scientist and dedicated lifelong learner who contributes to continuing education as a <a href="https://www.pce.uw.edu/certificates/cloud-data-management-and-analytics" target="_blank">Cloud Data Management &amp; Analytics</a> instructor at the University of Washington and as a volunteer teaching assistant at Henry M. Jackson High School in Millcreek, WA where he helps students learn Java and prepare for the AP Computer Science exam  <a href="http://tealsk12.org/" target="_blank">http://tealsk12.org</a> .  In his spare time he likes to travel, hike, read (technology or books about US Presidents), listen to Blues and Jazz, and enjoy an occasional round of golf.  Darwin hopes to help drive Big Data and Data Science education and increase the broad adoption of Data Science products and services like Cortana Analytics and build Data Science community.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h3>Keynote Speaker</h3>
+                            <h4>Ted Way</h4>
+                            <h5>Program Manager , Azure Machine Learning Engineering Team</h5>
+                        </hgroup>
+                        <p>
+                            Ted Way is a Program Manager on the Azure Machine Learning engineering team.  The Azure Machine Learning service enables you to quickly create a predictive model and use it in production.  He focuses on insights derived from telemetry and metrics from the service, and he also works on enabling BI analysts to go from hindsight to foresight by integrating Excel, Power BI, and other tools with Azure ML web services.  He received BS degrees in electrical engineering and computer engineering, MS degrees in electrical engineering and biomedical engineering, and a PhD in biomedical engineering, all from the University of Michigan – Ann Arbor.  His PhD dissertation was on “spell check for radiologists,” a computer-aided diagnosis (CAD) system that uses image processing and machine learning to estimate lung cancer malignancy on chest CT scans.  Ted was born in Taiwan, grew up in Arizona, and went to high school in Hsin-chu.  While working for Microsoft, he took a leave of absence to fulfill his military service requirement, serving as an Alternative Military Serviceman at the Ministry of Foreign Affairs (MOFA) from 2010-2011.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>KB Badu-Antwi</h4>
+                            <h5>Senior Program Manager</h5>
+                        </hgroup>
+                        <p>
+                            KB Badu-Antwi is Senior Program Manager responsible for the interoperability initiative spanning the entire Data Group (including SQL Server). He has been at Microsoft for over 10 years and currently leads cross-functional domestic and international teams responsible for defining, delivering, and monitoring engineering/antitrust compliance and interoperability requirements.
+                        </p>
+                        <p>
+                            Prior to joining the Data Group, KB served in the of Program Manager on the Xbox Platform team. He graduated from Seattle Pacific University with a Bachelor’s of Science degree in Computer Science and a Master’s of Science degree in Information System Management.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Michael Bowman</h4>
+                            <h5>Senior Program Manager, Office Interoperability Team</h5>
+                        </hgroup>
+                        <p>
+                            Michael Bowman is a Program Manager in the Microsoft Office Interoperability team. He leads the delivery and release efforts for interoperability events and test tools for the Microsoft Office Division, including SharePoint, Exchange Server, and Office. Prior to joining Microsoft, Michael spent the first part of his career in an engineering role at Hewlett Packard focusing on developing new industry standard server technologies.
+                        </p>
+                        <p>
+                            He graduated from the University of Washington with a Bachelor’s of Science degree in Computer Science and a Masters of Business Administration from the Foster School of Business at the University of Washington.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Tarun Chopra</h4>
+                            <h5>Senior Escalation Engineer</h5>
+                        </hgroup>
+                        <p>
+                            Tarun Chopra is a presently a Senior Escalation Engineer in the Microsoft Office Developer Support Open Specifications team. His primary responsibilities include helping customers implement solutions using WOPI, Exchange RPC/MAPI, ActiveSync, Web Services, Lync/Skype protocols, and Office Open XML and binary formats. Before joining Office Open Specifications team, Tarun played a vital role in helping customers in implementing Windows protocols and represented Microsoft in couple of Plugfest/Interop events organized globally. Authentication, LYNC/RDP, File Sharing protocols are some of his strengths.
+                        </p>
+                        <p>
+                            Prior to Microsoft, Tarun worked as a Development Lead in Developing Test Suites for Validation of Windows Open Specification and has vast experience in developing distributed systems. He played a key role in developing Parking Management Solutions for Japanese Firm and Verification of Ticketing System for Japanese Rail Network. He received a Bachelor’s Degree in Electronics and Telecommunication from University in India.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Andrew Davidoff</h4>
+                            <h5>Senior Software Test Engineer, Office Interoperability Team</h5>
+                        </hgroup>
+                        <p>
+                            Andrew Davidoff is a Senior Software Test Engineer in the Microsoft Office Interoperability team. He drives Interoperability testing and Test Suites across the Exchange family of Open Specifications, and other Office Open Specifications.
+                        </p>
+                        <p>
+                            Prior to joining Office Interoperability team, Andrew has served in the role of Senior Test Engineer and Senior Test Lead in Exchange team at Microsoft. He was responsible for testing of major components of Exchange Server for a number of releases. He graduated from the Moscow Aviation Institute, Russia with a Bachelor’s degree in Computer Science.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Tom Jebo</h4>
+                            <h5>Senior Escalation Engineer</h5>
+                        </hgroup>
+                        <p>
+                            Tom Jebo is a Senior Escalation Engineer in the Microsoft Developer Support Open Specifications team. His primary responsibilities are helping customers implement solutions using WOPI, Exchange RPC/MAPI, ActiveSync, Web Services, Lync/Skype protocols, and Office Open XML and binary formats. Before joining the Open Specifications team, Tom helped customers with Microsoft’s developer tools, C/C++ languages and COM technologies.
+                        </p>
+                        <p>
+                            Before Microsoft, Tom developed architectural simulation software at Amdhal Corporation in Sunnyvale, California. Tom graduated from Boston University with a bachelor’s degree in Computer Science and currently lives in Seattle Washington.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Pui Leung</h4>
+                            <h5>Software Engineer</h5>
+                        </hgroup>
+                        <p>
+                            Pui Leung is a Software Engineer in the Microsoft Office Extensibility team. He is responsible for Interoperability test suites and test tools development and release testing for the Microsoft Office Division, including SharePoint, Exchange Server, and Office.
+                        </p>
+                        <p>
+                            Prior to joining Microsoft, Pui worked as a System Software Engineer on various types of software projects including Windows kernel device driver and server management software at Compaq and Hewlett Packard. He graduated from the Oregon State University with a Bachelor’s of Science degree in Computer Science.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h4>Donny Luu</h4>
+                            <h5>Software Engineering Manager, Office Developer Experience Team</h5>
+                        </hgroup>
+                        <p>
+                            Donny is the software engineering manager of the Office Developer Experience team. He leads the development and release efforts for interoperability tools, documentation, and events for the Microsoft Office Division, including SharePoint, Exchange Server, and Office. The mission of the Developer Experience team is to provide Office365 developers and IT admins a good on ramp experience in developing, deploying, and migrating their solutions and documents on Office365 releases.  Our goals are to unite the Office365 developer communities where they can discover, learn, build, migrate, and measure the success of their applications.
+                        </p>
+                        <p>
+                            Prior to joining the Office Developer Experience team, Donny was the test director of the Microsoft Analytics and Presentation Services team where he leaded the testing and release efforts of Excel, PowerBI, and PowerPoint. In earlier Office releases, Donny was the software test manager for the Office Programmability team where he leaded the integration, testing, and release of VBA, COM-Addin, and PIA. He graduated from the University of Washington with a Bachelor of Science degree in Computer Science and Engineering.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <!-- 160317 update ↓-->
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h4>Seth Mottaghinejad</h4>
+                            <h5>Data Scientist</h5>
+                        </hgroup>
+                        <p>
+                            Seth is a data scientist with the Azure Machine Learning team at Microsoft, where his primary focus is on Microsoft R Server and its integration with other Microsoft products.  Prior to joining Microsoft, Seth worked as a consultant at Revolution Analytics, an big data platform for analytics using the R programming language.  In his consulting role, Seth helped customers replace their legacy analytics products (such as SAS) with R, integrate R with Hadoop or other distributed platforms, and develop R products or optimize their performance.  He joined Microsoft in 2015 when Microsoft acquired Revolution Analytics, opening the way for MRS (Microsoft R Server).  Seth also worked at American Express and Saks Fifth Avenue, primarily in marketing analytics and retail analytics roles.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="right">
+                        <hgroup>
+                            <h4>Mark Stafford</h4>
+                            <h5>Program Manager</h5>
+                        </hgroup>
+                        <p>
+                            Mark Stafford is a program manager at Microsoft contributing to the future of the OData protocol. Mark has a unique perspective on data access technologies given his many years of pre-Microsoft experience building and deploying real-world applications, managing developers and directing a business intelligence team.
+                        </p>
+                    </div>
+                </article><!-- 160317 update ↑-->
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Jingyu Shao</h4>
+                            <h5>Software Engineer</h5>
+                        </hgroup>
+                        <p>
+                            Jingyu Shao is a Software Test Engineer in the Microsoft Office Interoperability team. She is responsible for Interoperability tool development, especially Office parsers to run on Microsoft Message Analyzer. Parsers include SharePoint, Exchange Server and Lync Server.
+                        </p>
+                        <p>
+                            Prior to working on parsers, Jingyu worked as a Software Test Engineer for 4 years, focusing on SharePoint and Exchange Server test suits development and protocol testing. She graduated from Zhejiang University with a Master’s degree in Electronic Information Science Technology.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <img src="~/images/speaker.png" width="200" height="200">
+                    <div class="left">
+                        <hgroup>
+                            <h4>Jinghui Zhang</h4>
+                            <h5>Software Engineer, Office Extensibility Team, Microsoft Corporation</h5>
+                        </hgroup>
+                        <p>
+                            Jinghui Zhang is a Software Engineer in the Microsoft Office Extensibility team. She is a developer of dev.office.com and graph.microsoft.io. She also drives development for new Office Add-ins, SharePoint and Exchange Test Suites, and Office Open XML and Uniform Office Format interoperability tools.
+                        </p>
+                        <p>
+                            She gives talks about Office Add-in, Protocol Test Suites, etc. in the Microsoft Interop Events. And she also participates in the hack sessions to lead developers to reach their hack success. Her favorite part of the events is the brain storm and hack session.
+                        </p>
+                        <p>
+                            She graduated from Beijing University of Aeronautics &amp; Astronautics, China with a Bachelor’s degree in Information Management and Information Systems.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <div class="clearfix">
+                <a href="#top" class="gotop green">TOP↑</a>
+            </div>
+        </div>
         <footer>
             <small>
                 ©2016 Microsoft Corporation. 著作權所有，並保留一切權利。

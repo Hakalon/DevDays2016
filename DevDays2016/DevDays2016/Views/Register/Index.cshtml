@@ -2,7 +2,7 @@
     ViewBag.Title = "Register";
 }
 
-<a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">立即報名</a>
+<a href="~/Register/SendSignin" target="_blank" class="register">立即報名</a>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5717ec860676f670"></script>
 
@@ -23,8 +23,8 @@
                     報到/現場報名
                 </a>
             </li>
-            <li><a href="~/Home/Agenda">活動首頁</a></li>
-            <li><a href="~/Home/Index">講師介紹</a></li>
+            <li><a href="~/Home/Agenda">活動/講師介紹</a></li>
+            <li><a href="~/Home/Index">認識夥伴</a></li>
             <li><a href="~/Home/QA">意見交流</a></li>
             <li><a href="~/Home/Answer">活動問卷</a></li>
             <li class="eng"><a href="https://www.microsoft.com/taiwan/events/devdays/eng/default.htm">ENGLISH</a></li>
@@ -59,6 +59,24 @@
                     <select>
                         <option value="工程師">工程師</option>
                         <option value="商務人士">商務人士</option>
+                        <option value="設計師">設計師</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <div class="col-md-12" style="grid-column-align:center;">
+                    <h4>你的興趣</h4>
+                    <select>
+                        <option value="科技">科技</option>
+                        <option value="藝術與人文">藝術與人文</option>
+                        <option value="歷史">歷史</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <div class="col-md-12" style="grid-column-align:center;">
+                    <h4>你想認識的組群</h4>
+                    <select>
+                        <option value="工程師">工程師</option>
+                        <option value="創業家">創業家</option>
                         <option value="設計師">設計師</option>
                         <option value="其他">其他</option>
                     </select>
