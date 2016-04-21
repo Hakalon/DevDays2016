@@ -14,10 +14,5 @@ namespace DevDays2016.Models
         public string Name { get; set; }
         public string Tel { get; set; }
         public string Email { get; set; }
-
-        //一個使用者會有多個回應
-        public List<Response> responses;
-        public List<Question> questions;
-
     }
 }
