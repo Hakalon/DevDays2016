@@ -138,8 +138,15 @@
     <Compile Include="Migrations\201604201918144_init.Designer.cs">
       <DependentUpon>201604201918144_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604202224514_ADD.cs" />
+    <Compile Include="Migrations\201604202224514_ADD.Designer.cs">
+      <DependentUpon>201604202224514_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202257509_Test.cs" />
+    <Compile Include="Migrations\201604202257509_Test.Designer.cs">
+      <DependentUpon>201604202257509_Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\CustomInitializer.cs" />
     <Compile Include="Models\PostContext.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\Response.cs" />
@@ -225,6 +232,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604201918144_init.resx">
       <DependentUpon>201604201918144_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604202224514_ADD.resx">
+      <DependentUpon>201604202224514_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604202257509_Test.resx">
+      <DependentUpon>201604202257509_Test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

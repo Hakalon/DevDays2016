@@ -13,8 +13,5 @@ namespace DevDays2016.Models
         public int Id { get; set; }
         public string Content { get; set; }
 
-        public Question question;
-        public User user;
-
     }
 }

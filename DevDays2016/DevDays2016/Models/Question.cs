@@ -15,9 +15,5 @@ namespace DevDays2016.Models
 
         public string Content { get; set; }
 
-        //一個問題會有多個回應
-        public List<Response> responses;
-        public User user;
-
     }
 }

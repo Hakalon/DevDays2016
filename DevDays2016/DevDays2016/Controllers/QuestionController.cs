@@ -13,7 +13,11 @@ namespace DevDays2016.Controllers
         // GET: Question
         public ActionResult Index()
         {
-            return View("QA");
+            PostContext dbContext = new PostContext();
+            List<Question> value;
+            value = dbContext.Questions.ToList();
+
+            return View("QA", "Home", value);
         }
 
         public ActionResult Send(string userName, string content)
@@ -23,8 +27,10 @@ namespace DevDays2016.Controllers
             Question Qtemp = new Question();
             Qtemp.Content = content;
 
-            //if(!String.IsNullOrEmpty(userName))
-                
+            dbContext.Questions.Add(Qtemp);
+            dbContext.SaveChanges();
+
+            ViewBag.Name = userName;
 
             return RedirectToAction("Index");
         }
