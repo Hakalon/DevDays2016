@@ -3,7 +3,24 @@
 }
 @using DevDays2016.Models;
 
-<a href="~/Register/SendSignin" target="_blank" class="register">立即報名</a>
+@{
+    List<Question> list = new List<Question>();
+    Question tempValue1 = new Question();
+    Question tempValue2 = new Question();
+    Question tempValue3 = new Question();
+    tempValue1.Content = "請問Office Add-in能夠幫助我處理怎樣的問題呢？";
+    tempValue1.Name = "王小明";
+    tempValue2.Content = "請問我該去哪找Face API的相關資訊呢？";
+    tempValue2.Name = "Jack Chen";
+    tempValue3.Content = "這場活動是不是能夠提供網路線會比較好呢？";
+    tempValue3.Name = "匿名";
+    list.Add(tempValue1);
+    list.Add(tempValue2);
+    list.Add(tempValue3);
+}
+
+
+<a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">立即報名</a>
    
  <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5717ec860676f670"></script>
@@ -23,8 +40,8 @@
                     報到/現場報名
                 </a>
             </li>
-            <li><a href="~/Home/Agenda">活動/講師介紹</a></li>
-            <li><a href="~/Home/Index">認識夥伴</a></li>
+            <li><a href="~/Home/Agenda">活動首頁</a></li>
+            <li><a href="~/Home/Index">講師介紹</a></li>
             <li><a href="~/Home/QA">意見交流</a></li>
             <li><a href="~/Home/Answer">活動問卷</a></li>
             <li class="eng"><a href="https://www.microsoft.com/taiwan/events/devdays/eng/default.htm">ENGLISH</a></li>
@@ -32,7 +49,7 @@
     </nav>
     <div class="content wrapper">
 
-        <h4 class="underline">問題滿天飛！</h4>
+        <h2 class="underline" style="margin-bottom:20px;">問題滿天飛！</h2>
         @*提問*@
         <div class="row" style="padding-bottom:15px;">
             @using (Html.BeginForm("Send", "Question"))
@@ -62,25 +79,32 @@
         </div>
 
         @*問題板*@
-        @*<div class="row">
+        <div class="row">
 
-            @foreach (Question value in Model)
+            @foreach (Question value in list)
             {
                 <div class="message">
-                    <div class="row">
-                        <div class="row text-center">
-                            <div class="col-xs-6">發問者：匿名</div>
-                        </div>
-                        <div class="row text-center" style="padding-top:5px;">
-                            <div class="col-xs-12">
-                                @value.Content
+                    <div class="row" style="border: 1px solid #cccccc; border-radius: 4px; margin-left: 0px; margin-right:0px;" >
+                        <div class="row" style="padding: 10px; margin-left:0px; margin-right:0px;">
+                            
+                            <div class="col-xs-12 text-left">
+                                發問者：@value.Name
                             </div>
+                            
                         </div>
-                    </div>
-                </div>
+                        <div class= "row" style="padding: 10px; margin-left: 15px; margin-right: 0px;">
+                            <p class="col-xs-11" style="margin-left:15px">
+                                @value.Content
+                            </p>
+                            
+                            <img class="col-xs-1" src="~/images/sign.png" style="width:6%;">
+                                                    
+                        </div>
+                     </div>
+                 </div>
             }
 
-        </div>*@
+        </div>
 
 
     </div>
