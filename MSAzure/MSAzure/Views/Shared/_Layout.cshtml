@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Azure for DreamSpark</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        body {
+            font-family: Microsoft JhengHei light;
+        }
+
+        .logoBar {
+            background-color: #000;
+        }
+
+        .slogan {
+            padding: 0;
+            font-weight: bolder;
+            color: #666;
+        }
+
+        .intro {
+            margin: 20px;
+            color: #FFF;
+        }
+
+        .o {
+            color: #f78d1e;
+        }
+
+        .y {
+            color: #fdb813;
+        }
+
+        .webApp {
+            color: #FFF;
+            margin: 40px 20px 20px;
+        }
+
+        .clearDB {
+            color: #fff;
+            margin: 75px 20px 20px;
+        }
+
+        .appInsight {
+            color: #fff;
+            margin: 60px 20px 20px;
+        }
+
+        .VSO {
+            color: #fff;
+            margin: 80px 20px 20px;
+        }
+
+        .link {
+            background-color: #000;
+        }
+
+            .link > .item {
+                text-align: center;
+                color: #666;
+                font-weight: bolder;
+                padding: 20px;
+            }
+
+        a {
+            color: #666;
+        }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+        .copy {
+            color: #FFF;
+            font-size: 16px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
