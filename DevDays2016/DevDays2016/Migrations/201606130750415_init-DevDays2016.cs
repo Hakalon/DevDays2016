@@ -3,7 +3,7 @@ namespace DevDays2016.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class init : DbMigration
+    public partial class initDevDays2016 : DbMigration
     {
         public override void Up()
         {
@@ -13,6 +13,7 @@ namespace DevDays2016.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Content = c.String(),
+                        Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -30,6 +31,7 @@ namespace DevDays2016.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
                         Tel = c.String(),
                         Email = c.String(),
                     })

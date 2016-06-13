@@ -7,13 +7,13 @@ namespace DevDays2016.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ADD : IMigrationMetadata
+    public sealed partial class initDevDays2016 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ADD));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initDevDays2016));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604202224514_ADD"; }
+            get { return "201606130750415_init-DevDays2016"; }
         }
         
         string IMigrationMetadata.Source
