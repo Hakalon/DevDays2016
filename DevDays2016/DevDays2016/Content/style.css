@@ -40,8 +40,8 @@ h2.underline {display: block;border-bottom: 1px solid #E95B52;}
 	background-color: #FFF;
 	border-top-right-radius: 50px; 
 	-webkit-border-top-right-radius: 50px; 
-	*background: #FFF url(../images/content_bg.png) 0 0 no-repeat;
-	background: #FFF url(../images/content_bg.png) 0 0 no-repeat;\0
+	/*background: #FFF url(../images/content_bg.png) 0 0 no-repeat;
+	background: #FFF url(../images/content_bg.png) 0 0 no-repeat;\0*/
 }
 
 .wrapper {padding:50px;}
