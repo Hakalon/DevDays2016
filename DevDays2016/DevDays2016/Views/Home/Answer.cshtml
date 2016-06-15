@@ -35,13 +35,13 @@
     </nav>
 
     @* 內容 *@
-    <div class="content wrapper">
+    <div class="content container" style="padding:50px">
 
         <h2 class="underline">活動問卷</h2>
         <section>
             @using (Html.BeginForm("Send", "Home", FormMethod.Post))
             {
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding-top:20px">
                     <h4>您對於今天活動的場地滿意嗎? </h4>
                     <form>
                         <select name="request1">
@@ -98,12 +98,9 @@
 
                 //缺專長、照片
                 <div class="col-md-12" style="align-content:center">
-                    @*<nav class="top">*@
                         <ul>
                             <li><input style="margin-top: 20px" type="submit" name="送出" /></li>
-                            <li><a href="https://app.powerbi.com/view?r=eyJrIjoiNDYwZWU5MDEtMjhhNy00ZjU0LWE5MGUtZTA4ZjYxZWUyMjA1IiwidCI6Ijc4MGI1NTkwLTRlY2MtNDUxYS1hZThjLTRhN2QxNzJkYTkzNSIsImMiOjEwfQ%3D%3D" target="_blank"><img border="0" height="70" width="70" style="position:absolute;top:15px;left:920px" src="~/images/BI.jpg" /></li>
                         </ul>
-                     @*</nav>*@
                 </div>
             }
         </section>
