@@ -32,10 +32,10 @@
     </nav>
 
     @* 內容 *@
-    <div class="content wrapper">
+    <div class="content container">
 
-        <h2 class="underline">註冊</h2>
-        <section>
+        <h2 class="underline" style="margin-top:20px">現場報名</h2>
+        <section style="margin-top:20px;">
             @using (Html.BeginForm("Send", "Register", FormMethod.Post))
             {
                 <div class="col-md-12" >
@@ -54,7 +54,7 @@
                     <h4>暱稱</h4>
                     <input type="text" placeholder="小小明" />
                 </div>
-                <div class="col-md-12" style="grid-column-align:center;">
+                <div class="col-md-12">
                     <h4>職業</h4>
                     <select>
                         <option value="工程師">工程師</option>
@@ -63,7 +63,7 @@
                         <option value="其他">其他</option>
                     </select>
                 </div>
-                <div class="col-md-12" style="grid-column-align:center;">
+                <div class="col-md-12">
                     <h4>你的興趣</h4>
                     <select>
                         <option value="科技">科技</option>
@@ -72,7 +72,7 @@
                         <option value="其他">其他</option>
                     </select>
                 </div>
-                <div class="col-md-12" style="grid-column-align:center;">
+                <div class="col-md-12">
                     <h4>你想認識的組群</h4>
                     <select>
                         <option value="工程師">工程師</option>
@@ -82,8 +82,7 @@
                     </select>
                 </div>
 
-                //缺專長、照片
-                <div class="col-md-12" style="align-content:center" >
+                <div class="col-md-12" style="align-content:center; margin-bottom:20px;" >
                     <input type="button" value="回上一頁" onclick="location.href = '/Register/Signin'">
                     <input style="margin-top: 20px" type="submit" name="送出" />
                 </div>     
@@ -104,48 +103,6 @@
         </a>
     </footer>
 </div>
-@* 不知道以下在做什麼 *@
-<script type="text/javascript">
-    var varAutoFirePV = 1;
-    var varClickTracking = 1;
-    var varCustomerTracking = 1;
-    var Route = "";
-    var Ctrl = "";
-    document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
-</script>
-
-<script type="text/javascript">
-    // Put event listeners into place
-    window.addEventListener("DOMContentLoaded", function () {
-        // Grab elements, create settings, etc.
-        var canvas = document.getElementById("canvas"),
-            context = canvas.getContext("2d"),
-            video = document.getElementById("video"),
-            videoObj = { "video": true },
-            errBack = function (error) {
-                console.log("Video capture error: ", error.code);
-            };
-
-        // Put video listeners into place
-        if (navigator.getUserMedia) { // Standard
-            navigator.getUserMedia(videoObj, function (stream) {
-                video.src = stream;
-                video.play();
-            }, errBack);
-        } else if (navigator.webkitGetUserMedia) { // WebKit-prefixed
-            navigator.webkitGetUserMedia(videoObj, function (stream) {
-                video.src = window.webkitURL.createObjectURL(stream);
-                video.play();
-            }, errBack);
-        }
-        else if (navigator.mozGetUserMedia) { // Firefox-prefixed
-            navigator.mozGetUserMedia(videoObj, function (stream) {
-                video.src = window.URL.createObjectURL(stream);
-                video.play();
-            }, errBack);
-        }
-    }, false);
-</script>
 
 <script type="text/javascript" src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms.js">
 
