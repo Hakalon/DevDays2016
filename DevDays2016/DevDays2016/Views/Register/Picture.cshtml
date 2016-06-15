@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Empty";
+    ViewBag.Title = "Take a Picture";
 }
 
 <a href="~/Register/SendSignin" target="_blank" class="register">現場報名</a>
@@ -27,11 +27,16 @@
         </ul>
     </nav>
 
-    @*於此處放置你的內容*@
-    <div class="content wrapper">
 
-        <div class="col-md-12">
+    <div class="content container">
+
+        <h2 class="underline" style="margin-top:20px;margin-bottom:20px;" >Just Smile！</h2>
+        <p style="font-size:20px; font-family:'Microsoft JhengHei'; font-weight:bold">拍張照讓大家知道你在這，也讓大夥好認識你 =D</p>
+
+        <div class="col-md-12" style="padding-left:0px;">
+            
             <video id="video" width="640" height="480" autoplay></video>
+            
             <button id="snap">Take a picture！</button>
 
             <canvas id="canvas" width="640" height="480"></canvas>
@@ -39,7 +44,7 @@
 
         @using (Html.BeginForm("Index", "Home"))
             {
-                <input type = "submit" value = "完成註冊！" />
+                <input style="margin:20px 0px" type = "submit" value = "完成報到" />
             }
 
     </div>
@@ -58,21 +63,10 @@
         </a>
     </footer>
 </div>
-@* 不知道以下在做什麼 *@
-<script type="text/javascript">
-    var varAutoFirePV = 1;
-    var varClickTracking = 1;
-    var varCustomerTracking = 1;
-    var Route = "";
-    var Ctrl = "";
-    document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>");
-</script>
+
 <script type="text/javascript" src="./DevDays Asia 2016 亞太開發人員技術年會_files/ms.js">
 
 </script>
-
-
-
 
 
 <script type="text/javascript">
