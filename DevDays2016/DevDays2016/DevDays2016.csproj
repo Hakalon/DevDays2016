@@ -137,6 +137,10 @@
     <Compile Include="Migrations\201606130750415_init-DevDays2016.Designer.cs">
       <DependentUpon>201606130750415_init-DevDays2016.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606150858461_update_for_User_Model.cs" />
+    <Compile Include="Migrations\201606150858461_update_for_User_Model.Designer.cs">
+      <DependentUpon>201606150858461_update_for_User_Model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PostContext.cs" />
     <Compile Include="Models\Question.cs" />
@@ -237,6 +241,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201606130750415_init-DevDays2016.resx">
       <DependentUpon>201606130750415_init-DevDays2016.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606150858461_update_for_User_Model.resx">
+      <DependentUpon>201606150858461_update_for_User_Model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
