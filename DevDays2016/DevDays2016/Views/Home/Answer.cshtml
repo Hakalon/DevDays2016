@@ -3,10 +3,10 @@
 }
 
 <a href="~/Register/SendSignin" target="_blank" class="register">立即報名</a>
- 
 
-  
- <!-- Go to www.addthis.com/dashboard to customize your tools -->
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5717ec860676f670"></script>
 
 
@@ -29,7 +29,7 @@
             <li><a href="~/Home/Index">認識夥伴</a></li>
             <li><a href="~/Home/QA">意見交流</a></li>
             <li><a href="~/Home/Answer">活動問卷</a></li>
-            
+
             <li class="eng"><a href="https://www.microsoft.com/taiwan/events/devdays/eng/default.htm">ENGLISH</a></li>
         </ul>
     </nav>
@@ -43,64 +43,58 @@
             {
                 <div class="col-md-12" style="padding-top:20px">
                     <h4>您對於今天活動的場地滿意嗎? </h4>
-                    <form>
-                        <select name="request1">
-                            <option value="5">非常滿意</option>
-                            <option value="4">滿意</option>>
-                            <option value="3">普通</option>>
-                            <option value="2">不滿意</option>>
-                            <option value="1">非常不滿意</option>>
-                        </select>
-                    </form>
+                    <select name="place">
+                        <option value="5">非常滿意</option>
+                        <option value="4">滿意</option>>
+                        <option value="3">普通</option>>
+                        <option value="2">不滿意</option>>
+                        <option value="1">非常不滿意</option>>
+                    </select>
                 </div>
                 <div class="col-md-12">
                     <h4>您對於今天活動的工作人員服務滿意嗎?</h4>
-                    <form>
-                        <select name="request2">
-                            <option value="5">非常滿意</option>
-                            <option value="4">滿意</option>>
-                            <option value="3">普通</option>>
-                            <option value="2">不滿意</option>>
-                            <option value="1">非常不滿意</option>>
-                        </select>
-                    </form>
+
+                    <select name="staff">
+                        <option value="5">非常滿意</option>
+                        <option value="4">滿意</option>>
+                        <option value="3">普通</option>>
+                        <option value="2">不滿意</option>>
+                        <option value="1">非常不滿意</option>>
+                    </select>
+
                 </div>
                 <div class="col-md-12">
                     <h4>您覺得今天活動的講座及講師滿意嗎? </h4>
-                    <form>
-                        <select name="request3">
-                            <option value="5">非常滿意</option>
-                            <option value="4">滿意</option>>
-                            <option value="3">普通</option>>
-                            <option value="2">不滿意</option>>
-                            <option value="1">非常不滿意</option>>
-                        </select>
-                    </form>                
+
+                    <select name="activity">
+                        <option value="5">非常滿意</option>
+                        <option value="4">滿意</option>>
+                        <option value="3">普通</option>>
+                        <option value="2">不滿意</option>>
+                        <option value="1">非常不滿意</option>>
+                    </select>
+
                 </div>
                 <div class="col-md-12">
                     <h4>請問您從何處得知本次活動訊息?</h4>
-                    <form>
-                        <select name="where">
-                            <option value="email">電子宣傳郵件</option>
-                            <option value="news">新聞報導</option>>
-                            <option value="group">社群網站</option>>
-                            <option value="friend">新聞報導</option>>
-                            <option value="other">其他</option>>
-                        </select>
-                    </form>
+
+                    <select name="info">
+                        <option value="email">電子宣傳郵件</option>
+                        <option value="news">新聞報導</option>>
+                        <option value="group">社群網站</option>>
+                        <option value="friend">新聞報導</option>>
+                        <option value="other">其他</option>>
+                    </select>
+
                 </div>
                 <div class="col-md-12" style="grid-column-align:center;">
                     <h4>其他意見</h4>
-                    <form action="other"method="post">
-                        <textarea name="Content"></textarea><br>
-                     </form>
-                </div>
 
-                //缺專長、照片
-                <div class="col-md-12" style="align-content:center">
-                        <ul>
-                            <li><input style="margin-top: 20px" type="submit" name="送出" /></li>
-                        </ul>
+                    <textarea name="other"></textarea><br>
+
+                </div>
+                <div class="col-md-12">
+                    <input style="margin-top: 20px" type="submit" name="送出" />
                 </div>
             }
         </section>
