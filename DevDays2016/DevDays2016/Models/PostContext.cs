@@ -15,7 +15,7 @@ namespace DevDays2016.Models
 
         public DbSet<User> Users { get; set; }
         public DbSet<Question> Questions { get; set; }
-        public DbSet<Response> Responses { get; set; }
+        public DbSet<Questionnaire> Questionnaires { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

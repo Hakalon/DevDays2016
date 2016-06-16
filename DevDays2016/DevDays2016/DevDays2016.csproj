@@ -141,10 +141,14 @@
     <Compile Include="Migrations\201606150858461_update_for_User_Model.Designer.cs">
       <DependentUpon>201606150858461_update_for_User_Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606160830392_add_Questionnaire.cs" />
+    <Compile Include="Migrations\201606160830392_add_Questionnaire.Designer.cs">
+      <DependentUpon>201606160830392_add_Questionnaire.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\PostContext.cs" />
     <Compile Include="Models\Question.cs" />
-    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Questionnaire.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -244,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606150858461_update_for_User_Model.resx">
       <DependentUpon>201606150858461_update_for_User_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606160830392_add_Questionnaire.resx">
+      <DependentUpon>201606160830392_add_Questionnaire.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

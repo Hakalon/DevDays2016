@@ -13,25 +13,24 @@ namespace DevDays2016.Controllers
         // GET: Question
         public ActionResult Index()
         {
-            PostContext dbContext = new PostContext();
-            List<Question> value;
-            value = dbContext.Questions.ToList();
-
-            return View("QA", "Home", value);
+            return RedirectToAction("QA", "Home");
+            //return View("QA", "Home", value);
         }
 
-        public ActionResult Send(string userName, string content)
+        public ActionResult Send(string name, string content)
         {
             PostContext dbContext = new PostContext();
 
             Question Qtemp = new Question();
+
+            Qtemp.Name = name;
             Qtemp.Content = content;
 
             dbContext.Questions.Add(Qtemp);
             dbContext.SaveChanges();
 
-            ViewBag.Name = userName;
-
+            //ViewBag.Name = userName;
+            
             return RedirectToAction("Index");
         }
     }

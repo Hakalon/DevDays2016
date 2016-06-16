@@ -3,23 +3,6 @@
 }
 @using DevDays2016.Models;
 
-@{
-    List<Question> list = new List<Question>();
-    Question tempValue1 = new Question();
-    Question tempValue2 = new Question();
-    Question tempValue3 = new Question();
-    tempValue1.Content = "請問Office Add-in能夠幫助我處理怎樣的問題呢？";
-    tempValue1.Name = "王小明";
-    tempValue2.Content = "請問我該去哪找Face API的相關資訊呢？";
-    tempValue2.Name = "Jack Chen";
-    tempValue3.Content = "這場活動是不是能夠提供網路線會比較好呢？";
-    tempValue3.Name = "匿名";
-    list.Add(tempValue1);
-    list.Add(tempValue2);
-    list.Add(tempValue3);
-}
-
-
 <a href="https://msevents.microsoft.com/CUI/EventDetail.aspx?EventID=1032732819&amp;Culture=zh-TW&amp;community=0" target="_blank" class="register">立即報名</a>
    
  <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -58,7 +41,7 @@
                     <div class="col-xs-6">
                         <div class="form-group">
                             <label for="ID_Name">姓名</label>
-                            <input type="text" class="form-control" name="name" placeholder="王小明" />
+                            <input name="name" type="text" class="form-control" placeholder="王小明" />
                         </div>
                     </div>
                 </div>
@@ -66,7 +49,7 @@
                     <div class="col-xs-12">
                         <div class="form-group">
                             <label for="Writing">內容：</label>
-                            <textarea class="form-control" rows="3" style="width:100%; max-width: none;" name="content" placeholder="Content"></textarea>
+                            <textarea name="content" class="form-control" rows="3" style="width:100%; max-width: none;" placeholder="內容"></textarea>
                         </div>
                     </div>
                 </div>
@@ -81,7 +64,7 @@
         @*問題板*@
         <div class="row">
 
-            @foreach (Question value in list)
+            @foreach (Question value in Model)
             {
                 <div class="message">
                     <div class="row" style="border: 1px solid #cccccc; border-radius: 4px; margin-left: 0px; margin-right:0px;" >
